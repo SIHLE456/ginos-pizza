@@ -63,7 +63,6 @@ This site was developed as part of a Web Development course project (Part 3 – 
 - [W3Schools](https://www.w3schools.com/)
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [GitHub Pages Docs](https://pages.github.com/)
-- [LeafletJS](https://leafletjs.com/) *(optional if you used maps)*
 - Personal Images & Content by Siphesihle Ndaba
 
 ---
@@ -71,5 +70,5 @@ This site was developed as part of a Web Development course project (Part 3 – 
 ## 📬 Contact
 
 Website developed by **Siphesihle Ndaba**  
-Email: siphesihle@example.com  
-Location: Robertsham, Johannesburg  
+Email: siphesihlendaba@gmail.com  
+Location: Ormonde, Johannesburg  
