@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Gino's Italian Cuisine in Robertsham, Johannesburg. Authentic pizza, pasta, and more.">
+<meta name="keywords" content="Gino's, Italian Restaurant, Pizza, Pasta, Robertsham, Johannesburg, Italian food">
+<meta name="author" content="Siphesihle Ndaba">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Gino's Italian Cuisine</title>
+  <meta name="description" content="View our delicious dishes and warm restaurant atmosphere at Gino's Pizza, Robertsham." />
+  <link rel="stylesheet" href="Style.css" />
+  <script src="java.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <button id="toggle-dark-mode" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+
+  <nav>
+    <a href="index.html"><img src="Images/ginoslogo.jpg" alt="Gino's logo" width="200" /></a>
+    <a href="about.html">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact-us.html">Contact</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <a href="enquiry.html">enquiry</a>
+  </nav>
+
+  <header>
+    <h1>Our Gallery</h1>
+    <p class="subtitle">A look inside Gino’s kitchen and table</p>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-grid">
+      <img src="Images/ginos1.jpg" alt="Fresh pizza on the table" class="gallery-thumb" />
+      <img src="Images/ginos2.jpg" alt="Interior view of Gino's restaurant" class="gallery-thumb" />
+      <img src="Images/ginos3.png" alt="Kitchen staff preparing dishes" class="gallery-thumb" />
+      <img src="Images/ginos5.jpg" alt="Wide shot of dining area" class="gallery-thumb" />
+      <img src="Images/ginos6.jpg" alt="Customer enjoying a meal" class="gallery-thumb" />
+      <img src="Images/ginos7.jpg" alt="Various Italian dishes served" class="gallery-thumb" />
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Large image preview" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Siphesihle Ndaba. All rights reserved.</p>
+    <p><a href="sitemap.html">Sitemap</a></p>
+  </footer>
+</body>
+</html>

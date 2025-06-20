@@ -1,0 +1,10 @@
+# robots.txt for Gino's Italian Cuisine Website
+
+User-agent: *
+Disallow:
+
+# Allow all pages to be indexed
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml

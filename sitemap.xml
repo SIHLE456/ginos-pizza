@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-restaurant/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/menu.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/order.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/contact-us.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/enquiry.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://SIHLE456.github.io/ginos-pizza/gallery.html</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://yourusername.github.io/ginos-pizza/sitemap.html</loc>
+    <priority>0.30</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu - Gino's Italian Cuisine</title>
+  <meta name="description" content="Explore Gino's authentic Italian pizza and pasta menu. Freshly made, delicious options in Johannesburg." />
+  <link rel="stylesheet" href="Style.css" />
+  <script src="java.js" defer></script>
+</head>
+<meta name="description" content="Gino's Italian Cuisine in Robertsham, Johannesburg. Authentic pizza, pasta, and more.">
+<meta name="keywords" content="Gino's, Italian Restaurant, Pizza, Pasta, Robertsham, Johannesburg, Italian food">
+<meta name="author" content="Siphesihle Ndaba">
+
+<body>
+  <button id="toggle-dark-mode" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+
+  <nav>
+    <a href="index.html"><img src="Images/ginoslogo.jpg" alt="Gino's logo" width="200" /></a>
+    <a href="about.html">About Us</a>
+    <a href="contact-us.html">Contact</a>
+    <a href="menu.html" aria-current="page">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="enquiry.html">enquiry</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to Gino's Pizza Johannesburg</h1>
+    <p class="subtitle">Authentic Italian Pizza &amp; Pasta served fresh!</p>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    
+    <label for="menu-search" style="display:block; margin-bottom: 10px; font-weight:bold;">
+      Search Menu Items:
+    </label>
+    <input
+      type="text"
+      id="menu-search"
+      placeholder="Type to filter menu..."
+      style="width: 100%; max-width: 400px; padding: 8px; font-size: 16px; margin-bottom: 20px;"
+      aria-label="Search menu items"
+    />
+
+    <ul id="menu-list">
+      <li>Margherita Pizza - R120</li>
+      <li>Pepperoni Pizza - R140</li>
+      <li>Pasta Alfredo - R130</li>
+      <li>Lasagna - R150</li>
+    </ul>
+
+    <img src="Images/ginos7.jpg" alt="Delicious Italian dishes at Gino's" class="interior-img" />
+  </section>
+</body>
+</html>

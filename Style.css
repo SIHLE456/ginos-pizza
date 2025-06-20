@@ -1,0 +1,330 @@
+/* ===== Body and Typography ===== */
+body {
+    background-color: bisque;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== Logo ===== */
+.logo {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== Navigation ===== */
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: underline wavy;
+    font-size: large;
+}
+
+nav a:focus, nav a:hover {
+    outline: 3px solid #d2691e;
+    outline-offset: 2px;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    font-size: 3em;
+    font-family: cursive;
+    margin: 30px 0;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    margin: 30px 0;
+}
+
+/* ===== Subtitle ===== */
+.subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ===== Images ===== */
+.display-img {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.interior-img {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* ===== Awards Section ===== */
+.awards h2 {
+    font-size: x-large;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.awards p {
+    font-size: large;
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 1.06;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #f2e1c1;
+    padding: 15px 0;
+    font-size: medium;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* ===== Forms ===== */
+.contact-form-container {
+    width: 60%;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: large;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid #d2691e;
+    outline-offset: 2px;
+}
+
+/* Button styling */
+button, input[type="submit"] {
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+/* ===== Menu Section ===== */
+#menu {
+    text-align: center;
+    padding: 10px;
+}
+
+#menu h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: crimson;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#menu img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* ===== Order Section ===== */
+#order {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fab753;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#order h2 {
+    font-size: 40px;
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+#order p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* ===== Dark Mode ===== */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Dark mode tweaks for nav and form */
+.dark-mode nav a {
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-form-container form {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}
+
+.dark-mode button,
+.dark-mode input[type="submit"] {
+    background-color: #b03030;
+    color: #fff;
+}
+
+/* ===== Dark Mode Toggle Button ===== */
+#toggle-dark-mode {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #f55959;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== Accessibility: Focus States ===== */
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 3px solid #d2691e;
+    outline-offset: 2px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: medium;
+    }
+
+    .interior-img, .display-img {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-form-container {
+        width: 90%;
+    }
+
+    #order {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ===== Gallery Section ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery-thumb {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-thumb:hover {
+    transform: scale(1.05);
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+  
+  #lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  

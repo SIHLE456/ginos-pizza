@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Gino's Italian Cuisine in Robertsham, Johannesburg. Authentic pizza, pasta, and more.">
+<meta name="keywords" content="Gino's, Italian Restaurant, Pizza, Pasta, Robertsham, Johannesburg, Italian food">
+<meta name="author" content="Siphesihle Ndaba">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gino’s Enquiry Form | Italian Cuisine & Sponsorships</title>
+  <meta name="description" content="Enquire about our services, catering, or becoming a sponsor or volunteer with Gino's Italian Restaurant in Robertsham, Johannesburg." />
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="java.js" defer></script>
+</head>
+<body>
+
+  <!-- ✅ Dark Mode Toggle -->
+  <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+  <!-- ✅ Navigation -->
+  <nav>
+    <a href="index.html"><img src="Images/ginoslogo.jpg" alt="Gino's logo" width="200" /></a>
+    <a href="about.html">About Us</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="contact-us.html">Contact</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <a href="enquiry.html">enquiry</a>
+  </nav>
+
+  <header>
+    <h1>Service or Sponsorship Enquiry</h1>
+    <p class="subtitle">Let us know how we can assist you</p>
+  </header>
+
+  <!-- ✅ Enquiry Form -->
+  <section style="text-align: center; margin: 30px auto;">
+    <form id="enquiry-form" style="max-width: 600px; margin: auto; background-color: rgb(248, 217, 132); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="type">Enquiry Type:</label><br />
+      <select id="type" name="type" required>
+        <option value="">--Select--</option>
+        <option value="services">Services / Catering</option>
+        <option value="volunteer">Volunteering</option>
+        <option value="sponsor">Sponsorship</option>
+      </select><br /><br />
+
+      <label for="message">Details:</label><br />
+      <textarea id="message" name="message" rows="5" required placeholder="Provide more details..."></textarea><br /><br />
+
+      <button type="submit" style="padding: 10px 20px; background-color: crimson; color: white; border: none; border-radius: 5px;">Submit Enquiry</button>
+    </form>
+    <p id="enquiry-response" style="margin-top: 20px; font-weight: bold;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Siphesihle Ndaba. All rights reserved.</p>
+    <p><a href="sitemap.html">Sitemap</a></p>
+  </footer>
+
+  <!-- ✅ Inline JS Validation -->
+  <script>
+    document.getElementById("enquiry-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const type = document.getElementById("type").value;
+      const message = document.getElementById("message").value.trim();
+      const response = document.getElementById("enquiry-response");
+
+      // Basic validation
+      if (name === "" || email === "" || type === "" || message.length < 10) {
+        response.textContent = "Please fill in all fields with valid information (message must be at least 10 characters).";
+        response.style.color = "red";
+        return;
+      }
+
+      response.textContent = "Thank you for your enquiry! We'll get back to you shortly.";
+      response.style.color = "green";
+
+      // Optional: clear the form
+      this.reset();
+    });
+  </script>
+</body>
+</html>
